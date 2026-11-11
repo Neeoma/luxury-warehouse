@@ -33,3 +33,24 @@ A visually spectacular website with cinematic transitions, 3D-inspired elements,
 Which direction do you want us to build?
 
 My recommendation is option 3 if your priority is creating something visually outstanding. We can also combine it with option 1.
+
+---
+
+## The website (built)
+
+Direction 3, the premium immersive experience, combined with direction 1, the corporate warehouse site. It is a static site with no build step and no dependencies.
+
+```
+index.html        page structure and copy
+css/styles.css    design system, layout, animation
+js/main.js        interactions; CONFIG, ZONES and UNITS at the top hold the editable content
+assets/img/       photography
+```
+
+Run it locally with any static server, for example:
+
+```
+python3 -m http.server 8000
+```
+
+Before going live, replace the placeholder content: address, phone and email (footer and `CONFIG.email`), the headline figures, the unit list and the pricing rates in `js/main.js`. The quote form has no backend yet: it validates the request, saves it in the visitor's browser, and offers to email or download it.
